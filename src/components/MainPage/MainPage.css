@@ -61,6 +61,7 @@
   border: none;
   background-color: transparent;
   padding: 0;
+  z-index: 3;
 }
 
 .mainpage__layer5 {

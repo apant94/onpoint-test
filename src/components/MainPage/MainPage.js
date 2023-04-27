@@ -1,6 +1,6 @@
 import './MainPage.css';
 
-const MainPage = () => {
+const MainPage = ({goToTextPage}) => {
   return(
     <section className="mainpage">
       <div className='mainpage__text'>
@@ -16,7 +16,7 @@ const MainPage = () => {
       <div className='mainpage__layer8 image'></div>
       <div className='mainpage__layer4 image'></div>
       <div className='mainpage__bakti1 image'></div>
-      <button className='mainpage__button image'></button>
+      <button className='mainpage__button image' onClick={goToTextPage}></button>
     </section>
   )
 };

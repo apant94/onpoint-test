@@ -9,11 +9,15 @@ function App() {
     document.getElementById('scroller').scroll(0,0)
   }
 
+  const goToTextPage = () => {
+    document.getElementById('scroller').scroll(1024,0)
+  }
+
   return (
     <div className='page' id='scroller'>
       <Header backToHome={backToHome} />
       <div className='page__slider'>
-          <MainPage />
+          <MainPage goToTextPage={goToTextPage} />
           <TextPage />
           <BrendPage />
       </div>
