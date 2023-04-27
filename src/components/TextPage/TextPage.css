@@ -67,11 +67,11 @@
   letter-spacing: 0.015em;
   padding: 24px 41px 42px 30px;
   text-align: end;
-  /* background: #FFFFFF;
-  border-radius: 39px; */
+  background: #FFFFFF;
+  border-radius: 39px;
+  
 }
 
 .textpage__span {
   font-weight: 700;
 }
-
