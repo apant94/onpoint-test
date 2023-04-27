@@ -53,6 +53,11 @@ const TextPage = () => {
           </div>
         </div>
       </div>
+      <div className="textpage__layer4 image"></div>
+      <div className="textpage__layer2 image"></div>
+      <div className="textpage__layer6 image"></div>
+      <div className="textpage__layer3 image"></div>
+      <div className="textpage__layer5 image"></div>
     </section>
   )
 };

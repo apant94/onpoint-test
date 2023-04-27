@@ -5,8 +5,13 @@ import BrendPage from '../BrendPage/BrendPage';
 import Header from '../Header/Header';
 
 function App() {
+  const backToHome = () => {
+    document.getElementById('scroller').scroll(0,0)
+  }
+
   return (
-    <div className='page'>
+    <div className='page' id='scroller'>
+      <Header backToHome={backToHome} />
       <div className='page__slider'>
           <MainPage />
           <TextPage />

@@ -1,0 +1,27 @@
+.header {
+  z-index: 2;
+  top: 25px;
+  left: 67px;
+  position: fixed;
+  display: flex;
+  gap: 25px;
+  align-items: center;
+}
+
+.header__home {
+  width: 21px;
+  height: 18px;
+  cursor: pointer;
+}
+
+.header__stripe {
+  width: 1px;
+  height: 25px;
+}
+
+.header__logo {
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 1.18;
+  letter-spacing: 0.06em;
+}

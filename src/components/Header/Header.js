@@ -1,7 +1,17 @@
 import './Header.css';
+import homeImg from '../../images/brendpage/brendpage-home.png';
+import stripeImg from '../../images/brendpage/brendpage-stripe.png'
 
-const Header = () => {
+const Header = ({backToHome}) => {
+  
 
+  return (
+    <header className='header'>
+      <img alt='Домой' className='header__home' src={homeImg} onClick={backToHome}/>
+      <img alt='Разделитель' className='header__stripe' src={stripeImg}/>
+      <p className='header__logo'>PROJECT</p>
+    </header>
+  )
 };
 
 export default Header;
