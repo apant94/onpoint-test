@@ -1,0 +1,209 @@
+.mainpage {
+  position: absolute;
+  width: 1024px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  background-image: url(../../images/mainpage/mainpage-bg.png);
+}
+
+.image {
+  background-repeat: no-repeat;
+  background-size: 100%;
+  position: absolute;
+}
+
+.mainpage__layer7 {
+  background-image: url(../../images/mainpage/Layer7.png);
+  width: 127px;
+  height: 116px;
+  top: 71px;
+}
+
+.mainpage__pink-sperm {
+  background-image: url(../../images/mainpage/pink_sperm.png);
+  width: 275px;
+  height: 152px;
+  bottom: 22px;
+}
+
+.mainpage__layer4copy {
+  background-image: url(../../images/mainpage/Layer4copy.png);
+  width: 84.5px;
+  height: 77.5px;
+  left: 350px;
+  bottom: 59px;
+}
+
+.mainpage__layer4copy2 {
+  background-image: url(../../images/mainpage/Layer4copy2.png);
+  width: 71px;
+  height: 68.5px;
+  right: 36px;
+  top: 25px;
+}
+
+.mainpage__pink-sperm-1 {
+  background-image: url(../../images/mainpage/pink_sperm_1.png);
+  width: 591.5px;
+  height: 92.5px;
+  right: 2px;
+  top: 153px;
+  z-index: 2;
+}
+
+.mainpage__button {
+  background-image: url(../../images/mainpage/Button.png);
+  width: 289px;
+  height: 81px;
+  right: 109px;
+  bottom: 224px;
+  border: none;
+  background-color: transparent;
+  padding: 0;
+}
+
+.mainpage__layer5 {
+  background-image: url(../../images/mainpage/Layer5.png);
+  width: 62.5px;
+  height: 57px;
+  right: 217px;
+  top: 60px;
+  animation: layer5 10s ease-in infinite;
+  z-index: 1;
+}
+
+@keyframes layer5 {
+  0% {
+    top: 60px;
+    right: 217px;
+  }
+  50% {
+    top: 70px;
+    right: 190px;
+  }
+  100% {
+    top: 60px;
+    right: 217px;
+  }
+}
+
+.mainpage__layer8 {
+  background-image: url(../../images/mainpage/Layer8.png);
+  width: 110.5px;
+  height: 113.5px;
+  right: 51px;
+  top: 200px;
+  animation: layer8 15s ease-in-out infinite, rotate8 30s linear infinite;
+  z-index: 3;
+}
+
+@keyframes layer8 {
+  0% {
+    top: 200px;
+    right: 51px;
+  }
+  50% {
+    top: 100px;
+    right: 190px;
+  }
+  100% {
+    top: 200px;
+    right: 51px;
+  }
+}
+
+@keyframes rotate8 {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0);
+  }
+}
+
+.mainpage__layer4 {
+  background-image: url(../../images/mainpage/Layer4.png);
+  width: 228px;
+  height: 128px;
+  right: 254px;
+  bottom: 0;
+  animation: layer4 10s ease-in-out infinite;
+  z-index: 1;
+}
+
+
+@keyframes layer4 {
+  0% {
+    width: 228px;
+    height: 128px;
+    bottom: 0;
+  }
+  50% {
+    width: 260px;
+    height: 160px;
+    bottom: -27px;
+    right: 280px;
+  }
+  100% {
+    width: 228px;
+    height: 128px;
+    bottom: 0;
+  }
+}
+
+.mainpage__bakti1 {
+  background-image: url(../../images/mainpage/bakti_1.png);
+  width: 73px;
+  height: 71px;
+  left: 23px;
+  bottom: 194px;
+  animation: bakti1 10s ease-in-out infinite;
+}
+
+@keyframes bakti1 {
+  0% {
+    left: 23px;
+    bottom: 194px;
+  }
+  50% {
+    left: 35px;
+    bottom: 160px;
+  }
+  100% {
+    left: 23px;
+    bottom: 194px;
+  }
+}
+
+.mainpage__text {
+  padding-left: 66px;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 91%;
+  transform: translateY(-25px);
+}
+
+.mainpage__text-greeting {
+  font-family: 'DIN Pro';
+  font-weight: 400;
+  font-size: 27px;
+  line-height: 1.22;
+  letter-spacing: 0.07em;
+  margin: 0;
+}
+
+.mainpage__text-title {
+  font-weight: 400;
+  font-size: 109px;
+  line-height: 1.08;
+  margin: 0;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.mainpage__text-span {
+  font-weight: 800;
+}
