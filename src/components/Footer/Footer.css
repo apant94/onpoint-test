@@ -1,0 +1,10 @@
+.footer {
+  position: fixed;
+  left: 70px;
+  bottom: 15px;
+}
+
+.footer__logo {
+  width: 58px;
+  height: 12px;
+}
