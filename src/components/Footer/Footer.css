@@ -2,6 +2,7 @@
   position: fixed;
   left: 70px;
   bottom: 15px;
+  z-index: 3;
 }
 
 .footer__logo {
