@@ -33,6 +33,7 @@
   flex-direction: row;
   overflow: auto;
   direction: rtl;
+  border-radius: 39px;
 }
 
 .textpage__textmodal::-webkit-scrollbar {
@@ -69,7 +70,6 @@
   text-align: end;
   background: #FFFFFF;
   border-radius: 39px;
-  
 }
 
 .textpage__span {
