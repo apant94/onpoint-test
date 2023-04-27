@@ -11,3 +11,67 @@
   background-size: 100%;
   position: absolute;
 }
+
+.textpage__container {
+  margin: 165px auto 65px 66px;
+  width: 80%;
+}
+
+.textpage__title {
+  width: 185px;
+  font-family: 'DIN Pro';
+  font-weight: 400;
+  font-size: 26.9678px;
+  line-height: 33px;
+  letter-spacing: 0.07em;
+  margin: 0 0 33px;
+}
+
+.textpage__textmodal {
+  width: 100%;
+  scroll-behavior: smooth;
+  flex-direction: row;
+  overflow: auto;
+  direction: rtl;
+}
+
+.textpage__textmodal::-webkit-scrollbar {
+  width: 20px;
+  scroll-behavior: smooth;
+}
+.textpage__textmodal::-webkit-scrollbar-track {
+  background: #000000;
+  border: 8px solid transparent;
+  background-clip: content-box;
+}
+.textpage__textmodal::-webkit-scrollbar-thumb {
+  background-image: url(../../images/textpage/textpage-scroll.png);
+  background-repeat: no-repeat;
+  width: 19px;
+  height: 99.6px;
+}
+
+.textpage__textmodal-container {
+  background: #FFFFFF;
+  border-radius: 39px;
+  width: 97%;
+  height: 445px;
+}
+
+.textpage__text {
+  margin: 0;
+  font-family: 'DIN Pro';
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 1.36;
+  letter-spacing: 0.015em;
+  padding: 24px 41px 42px 30px;
+  text-align: end;
+  /* background: #FFFFFF;
+  border-radius: 39px; */
+}
+
+.textpage__span {
+  font-weight: 700;
+}
+
