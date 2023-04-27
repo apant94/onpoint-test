@@ -5,3 +5,14 @@
   margin: 0 0 0 2048px;
   background-image: url(../../images/brendpage/brendpage-bg.png);
 }
+
+.brendpage__bottle {
+  z-index: 4;
+  position: absolute;
+  bottom: 0;
+  left: 58px;
+}
+
+.brendpage__bubble1 {
+  background-image: url(../../images/brendpage/brendpage-bubble1.png);
+}

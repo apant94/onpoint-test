@@ -20,7 +20,13 @@
 }
 
 .page__slider {
-  width: 3080px;
+  width: 3074px;
   scroll-behavior: smooth;
   overflow: scroll;
+}
+
+.image {
+  background-repeat: no-repeat;
+  background-size: 100%;
+  position: absolute;
 }

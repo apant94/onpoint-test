@@ -73,12 +73,6 @@
   font-weight: 700;
 }
 
-.image {
-  background-repeat: no-repeat;
-  background-size: 100%;
-  position: absolute;
-}
-
 .textpage__layer4 {
   background-image: url(../../images/textpage/Layer3copy4.png);
   width: 391px;

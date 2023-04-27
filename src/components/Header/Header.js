@@ -1,6 +1,6 @@
 import './Header.css';
-import homeImg from '../../images/brendpage-home.png';
-import stripeImg from '../../images/brendpage-stripe.png'
+import homeImg from '../../images/header-home.png';
+import stripeImg from '../../images/header-stripe.png'
 
 const Header = ({backToHome}) => {
   
