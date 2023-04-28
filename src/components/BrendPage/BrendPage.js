@@ -3,7 +3,8 @@ import bottleImg from '../../images/brendpage/brendpage-bottle.png';
 import eatImage from '../../images/brendpage/brendpage-eat.png';
 import calendarImage from '../../images/brendpage/brendpage-calendar.png';
 
-const BrendPage = () => {
+const BrendPage = ({ setIsOpen }) => {
+
   return (
     <section className='brendpage'>
       <img alt='Продукт' src={bottleImg} className='brendpage__bottle' />
@@ -39,7 +40,7 @@ const BrendPage = () => {
             A arcu cursus vitae
           </p>
         </div>
-        <button className='brendpage__button'></button>
+        <button className='brendpage__button' onClick={() => setIsOpen(true)}></button>
       </div>
     </section>
   )
