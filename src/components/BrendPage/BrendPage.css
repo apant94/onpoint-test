@@ -21,6 +21,7 @@
   height: 38px;
   left: 232px;
   top: 111px;
+  z-index: 5;
   animation: bubble1 10s linear infinite;
 }
 
