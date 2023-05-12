@@ -4,20 +4,21 @@ import eatImage from '../../images/brendpage/brendpage-eat.png';
 import calendarImage from '../../images/brendpage/brendpage-calendar.png';
 
 const BrendPage = ({ setIsOpen }) => {
-
   return (
-    <section className='brendpage'>
-      <img alt='Продукт' src={bottleImg} className='brendpage__bottle' />
-      <div className='brendpage__bubble1 image'></div>
-      <div className='brendpage__bubble2 image'></div>
-      <div className='brendpage__bubble3 image'></div>
-      <div className='brendpage__bubble8 image'></div>
-      <div className='brendpage__bubble4 image'></div>
-      <div className='brendpage__bubble5 image'></div>
-      <div className='brendpage__bubble6 image'></div>
-      <div className='brendpage__bubble7 image'></div>
-      <h2 className='brendpage__title'>КЛЮЧЕВОЕ СООБЩЕНИЕ</h2>
-      <h3 className='brendpage__subtitle'>BREND<span className='brendpage__subtitle-span'>XY</span></h3>
+    <section className="brendpage">
+      <img alt="Продукт" src={bottleImg} className="brendpage__bottle" />
+      <div className="brendpage__bubble1 image"></div>
+      <div className="brendpage__bubble2 image"></div>
+      <div className="brendpage__bubble3 image"></div>
+      <div className="brendpage__bubble8 image"></div>
+      <div className="brendpage__bubble4 image"></div>
+      <div className="brendpage__bubble5 image"></div>
+      <div className="brendpage__bubble6 image"></div>
+      <div className="brendpage__bubble7 image"></div>
+      <h2 className="brendpage__title">КЛЮЧЕВОЕ СООБЩЕНИЕ</h2>
+      <h3 className="brendpage__subtitle">
+        BREND<span className="brendpage__subtitle-span">XY</span>
+      </h3>
       <div className="brendpage__container">
         <div className="brendpage__window-eat">
           <img
@@ -26,8 +27,8 @@ const BrendPage = ({ setIsOpen }) => {
             alt="Иконка блюда"
           />
           <p className="brendpage__window-text brendpage__window-text_type_eat">
-            Ehicula ipsum a arcu cursus vitae. Eu non diam phasellus
-            vestibulum lorem sed risus ultricies
+            Ehicula ipsum a arcu cursus vitae. Eu non diam phasellus vestibulum
+            lorem sed risus ultricies
           </p>
         </div>
         <div className="brendpage__window-calendar">
@@ -40,10 +41,13 @@ const BrendPage = ({ setIsOpen }) => {
             A arcu cursus vitae
           </p>
         </div>
-        <button className='brendpage__button' onClick={() => setIsOpen(true)}></button>
+        <button
+          className="brendpage__button"
+          onClick={() => setIsOpen(true)}
+        ></button>
       </div>
     </section>
-  )
+  );
 };
 
 export default BrendPage;

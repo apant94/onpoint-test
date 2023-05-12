@@ -12,28 +12,28 @@ function App() {
 
   const onClose = () => {
     setIsOpen(false);
-  }
+  };
 
   const backToHome = () => {
-    document.getElementById('scroller').scroll(0,0)
-  }
+    document.getElementById('scroller').scroll(0, 0);
+  };
 
   const goToTextPage = () => {
-    document.getElementById('scroller').scroll(1024,0)
-  }
+    document.getElementById('scroller').scroll(1024, 0);
+  };
 
   return (
-    <div className='page' id='scroller'>
+    <div className="page" id="scroller">
       <Header backToHome={backToHome} />
-      <div className='page__slider'>
-          <MainPage goToTextPage={goToTextPage} />
-          <TextPage />
-          <BrendPage setIsOpen={setIsOpen} />
+      <div className="page__slider">
+        <MainPage goToTextPage={goToTextPage} />
+        <TextPage />
+        <BrendPage setIsOpen={setIsOpen} />
       </div>
       <Footer />
       <Popup isOpen={isOpen} onClose={onClose} />
     </div>
-  )
+  );
 }
 
 export default App;
