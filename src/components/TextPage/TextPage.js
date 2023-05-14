@@ -1,6 +1,6 @@
 import './TextPage.css';
 
-const TextPage = () => {
+const TextPage = ({ viewport }) => {
   return (
     <section className="textpage">
       <div className="textpage__container">
@@ -66,11 +66,31 @@ const TextPage = () => {
           </div>
         </div>
       </div>
-      <div className="textpage__layer4 image"></div>
-      <div className="textpage__layer2 image"></div>
-      <div className="textpage__layer6 image"></div>
-      <div className="textpage__layer3 image"></div>
-      <div className="textpage__layer5 image"></div>
+      <div
+        className={`textpage__layer4 image ${
+          viewport === -1024 ? 'textpage__layer4_animated' : ''
+        }`}
+      ></div>
+      <div
+        className={`textpage__layer2 image ${
+          viewport === -1024 ? 'textpage__layer2_animated' : ''
+        }`}
+      ></div>
+      <div
+        className={`textpage__layer6 image ${
+          viewport === -1024 ? 'textpage__layer6_animated' : ''
+        }`}
+      ></div>
+      <div
+        className={`textpage__layer3 image ${
+          viewport === -1024 ? 'textpage__layer3_animated' : ''
+        }`}
+      ></div>
+      <div
+        className={`textpage__layer5 image ${
+          viewport === -1024 ? 'textpage__layer5_animated' : ''
+        }`}
+      ></div>
     </section>
   );
 };

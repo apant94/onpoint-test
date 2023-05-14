@@ -1,9 +1,8 @@
 .textpage {
   overflow-x: visible;
-  position: absolute;
+  position: relative;
   width: 1024px;
   height: 100%;
-  margin: 0 0 0 1024px;
   background-image: url(../../images/textpage/textpage-bg.png);
 }
 
@@ -77,11 +76,13 @@
   background-image: url(../../images/textpage/Layer3copy4.png);
   width: 391px;
   height: 145px;
-  /* top: 70px;
-  right: -80px; */
+  top: 70px;
+  right: -80px;
   z-index: 1;
+}
+
+.textpage__layer4_animated {
   animation: textlayer4 2s linear forwards;
-  animation-delay: 3s;
 }
 
 @keyframes textlayer4 {
@@ -101,11 +102,13 @@
   background-image: url(../../images/textpage/Layer3copy2.png);
   width: 793px;
   height: 372px;
-  /* top: 84px;
-  right: -345px; */
+  top: 84px;
+  right: -345px;
   z-index: 1;
+}
+
+.textpage__layer2_animated {
   animation: textlayer2 2s linear forwards;
-  animation-delay: 3s;
 }
 
 @keyframes textlayer2 {
@@ -125,11 +128,13 @@
   background-image: url(../../images/textpage/Layer3copy6.png);
   width: 1230px;
   height: 606px;
-  /* left: 321px;
-  top: 96px; */
+  left: 321px;
+  top: 96px;
   z-index: 1;
+}
+
+.textpage__layer6_animated {
   animation: textlayer6 2s linear forwards;
-  animation-delay: 3s;
 }
 
 @keyframes textlayer6 {
@@ -149,11 +154,13 @@
   background-image: url(../../images/textpage/Layer3copy3.png);
   width: 648px;
   height: 270px;
-  /* right: -480px;
-  bottom: 103px; */
+  right: -480px;
+  bottom: 103px;
   z-index: 1;
+}
+
+.textpage__layer3_animated {
   animation: textlayer3 2s linear forwards;
-  animation-delay: 3s;
 }
 
 @keyframes textlayer3 {
@@ -173,11 +180,13 @@
   background-image: url(../../images/textpage/Layer3copy5.png);
   width: 316px;
   height: 123px;
-  /* right: -140px;
-  bottom: 126px; */
+  right: -140px;
+  bottom: 126px;
   z-index: 1;
+}
+
+.textpage__layer5_animated {
   animation: textlayer5 2s linear forwards;
-  animation-delay: 3s;
 }
 
 @keyframes textlayer5 {
