@@ -4,12 +4,7 @@
   height: 768px;
   width: 1024px;
   overflow: hidden;
-  /* display: flex;
-  flex-direction: row; */
   position: relative;
-  /* overflow: scroll;
-  scroll-behavior: smooth; */
-  /* margin: 0 auto; */
   color: #000000;
   font-family: 'Gilroy', 'Arial', 'Helvetica', sans-serif;
   font-weight: 400;
@@ -21,12 +16,6 @@
   -moz-text-size-adjust: 100%;
   text-rendering: optimizeLegibility;
 }
-
-/* .page__slider {
-  width: 3074px;
-  scroll-behavior: smooth;
-  overflow: scroll;
-} */
 
 .image {
   background-repeat: no-repeat;
