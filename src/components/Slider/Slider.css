@@ -1,0 +1,12 @@
+.slider {
+  display: flex;
+  height: 768px;
+  width: 1024px;
+  overflow: hidden;
+}
+
+.slider__container {
+  display: flex;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in-out;
+}

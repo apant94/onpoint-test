@@ -1,5 +1,5 @@
 .mainpage {
-  position: absolute;
+  position: relative;
   width: 1024px;
   height: 100%;
   display: flex;
@@ -126,7 +126,6 @@
   animation: layer4 10s ease-in-out infinite;
   z-index: 1;
 }
-
 
 @keyframes layer4 {
   0% {

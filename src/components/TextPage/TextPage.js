@@ -1,65 +1,98 @@
 import './TextPage.css';
 
-const TextPage = () => {
+const TextPage = ({ viewport }) => {
   return (
-    <section className='textpage'>
-      <div className='textpage__container'>
-        <h2 className='textpage__title'>ТЕКСТ СООБЩЕНИЯ</h2>
-        <div className='textpage__textmodal'>
-          <div className='textpage__textmodal-container'>
-            <p className='textpage__text'>
-              <span className='textpage__span'>Lorem ipsum dolor sit amet,</span> consectetur adipiscing elit, sed do 
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis ut diam quam nulla. Mauris in aliquam sem fringilla ut morbi 
-              tincidunt. Vitae aliquet nec ullamcorper sit amet risus nullam eget 
-              felis. Nulla pharetra diam sit amet nisl. Eget nulla facilisi etiam 
-              dignissim diam quis enim lobortis. Est sit amet facilisis magna. 
-              Neque laoreet suspendisse interdum consectetur libero id. Nec ullamcorper sit amet risus nullam eget felis eget.Mollis aliquam ut porttitor leo a diam sollicitudin tempor id. Euismod quis viverra nibh cras pulvinar mattis nunc. Massa massa ultricies mi quis. Sit amet massa vitae tortor 
-              condimentum lacinia. Et malesuada fames ac turpis egestas integer eget. Elementum pulvinar etiam non quam lacus suspendisse 
-              faucibus interdum posuere.
-              Amet justo donec enim diam vulputate ut pharetra sit. 
-              Risus ultricies tristique nulla aliquet enim tortor at auctor. 
-              Velit sed ullamcorper morbi tincidunt ornare massa. 
-              Quis hendrerit dolor magna eget est lorem ipsum. Etiam dignissim 
-              diam quis enim. Gravida neque convallis a cras. Ut enim blandit 
-              volutpat maecenas volutpat. Mauris sit amet massa vitae tortor 
-              condimentum lacinia quis vel.
-              Vitae aliquet nec ullamcorper sit amet risus nullam eget 
-              felis. Nulla pharetra diam sit amet nisl. Eget nulla facilisi etiam 
-              dignissim diam quis enim lobortis. Est sit amet facilisis magna. 
-              Neque laoreet suspendisse interdum consectetur libero id. Nec ullamcorper sit amet risus nullam eget felis eget.Mollis aliquam ut porttitor leo a diam sollicitudin tempor id. Euismod quis viverra nibh cras pulvinar mattis nunc. Massa massa ultricies mi quis. Sit amet massa vitae tortor 
-              condimentum lacinia. Et malesuada fames ac turpis egestas integer eget. Elementum pulvinar etiam non quam lacus suspendisse 
-              faucibus interdum posuere.
-              Amet justo donec enim diam vulputate ut pharetra sit. 
-              Risus ultricies tristique nulla aliquet enim tortor at auctor. 
-              Velit sed ullamcorper morbi tincidunt ornare massa. 
-              Quis hendrerit dolor magna eget est lorem ipsum. Etiam dignissim 
-              diam quis enim. Gravida neque convallis a cras. Ut enim blandit 
-              volutpat maecenas volutpat. Mauris sit amet massa vitae tortor 
-              condimentum lacinia quis vel. 
-              Vitae aliquet nec ullamcorper sit amet risus nullam eget 
-              felis. Nulla pharetra diam sit amet nisl. Eget nulla facilisi etiam 
-              dignissim diam quis enim lobortis. Est sit amet facilisis magna. 
-              Neque laoreet suspendisse interdum consectetur libero id. Nec ullamcorper sit amet risus nullam eget felis eget.Mollis aliquam ut porttitor leo a diam sollicitudin tempor id. Euismod quis viverra nibh cras pulvinar mattis nunc. Massa massa ultricies mi quis. Sit amet massa vitae tortor 
-              condimentum lacinia. Et malesuada fames ac turpis egestas integer eget. Elementum pulvinar etiam non quam lacus suspendisse 
-              faucibus interdum posuere.
-              Amet justo donec enim diam vulputate ut pharetra sit. 
-              Risus ultricies tristique nulla aliquet enim tortor at auctor. 
-              Velit sed ullamcorper morbi tincidunt ornare massa. 
-              Quis hendrerit dolor magna eget est lorem ipsum. Etiam dignissim 
-              diam quis enim. Gravida neque convallis a cras. Ut enim blandit 
-              volutpat maecenas volutpat. Mauris sit amet massa vitae tortor 
+    <section className="textpage">
+      <div className="textpage__container">
+        <h2 className="textpage__title">ТЕКСТ СООБЩЕНИЯ</h2>
+        <div className="textpage__textmodal">
+          <div className="textpage__textmodal-container">
+            <p className="textpage__text">
+              <span className="textpage__span">
+                Lorem ipsum dolor sit amet,
+              </span>{' '}
+              consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+              labore et dolore magna aliqua. Duis ut diam quam nulla. Mauris in
+              aliquam sem fringilla ut morbi tincidunt. Vitae aliquet nec
+              ullamcorper sit amet risus nullam eget felis. Nulla pharetra diam
+              sit amet nisl. Eget nulla facilisi etiam dignissim diam quis enim
+              lobortis. Est sit amet facilisis magna. Neque laoreet suspendisse
+              interdum consectetur libero id. Nec ullamcorper sit amet risus
+              nullam eget felis eget.Mollis aliquam ut porttitor leo a diam
+              sollicitudin tempor id. Euismod quis viverra nibh cras pulvinar
+              mattis nunc. Massa massa ultricies mi quis. Sit amet massa vitae
+              tortor condimentum lacinia. Et malesuada fames ac turpis egestas
+              integer eget. Elementum pulvinar etiam non quam lacus suspendisse
+              faucibus interdum posuere. Amet justo donec enim diam vulputate ut
+              pharetra sit. Risus ultricies tristique nulla aliquet enim tortor
+              at auctor. Velit sed ullamcorper morbi tincidunt ornare massa.
+              Quis hendrerit dolor magna eget est lorem ipsum. Etiam dignissim
+              diam quis enim. Gravida neque convallis a cras. Ut enim blandit
+              volutpat maecenas volutpat. Mauris sit amet massa vitae tortor
+              condimentum lacinia quis vel. Vitae aliquet nec ullamcorper sit
+              amet risus nullam eget felis. Nulla pharetra diam sit amet nisl.
+              Eget nulla facilisi etiam dignissim diam quis enim lobortis. Est
+              sit amet facilisis magna. Neque laoreet suspendisse interdum
+              consectetur libero id. Nec ullamcorper sit amet risus nullam eget
+              felis eget.Mollis aliquam ut porttitor leo a diam sollicitudin
+              tempor id. Euismod quis viverra nibh cras pulvinar mattis nunc.
+              Massa massa ultricies mi quis. Sit amet massa vitae tortor
+              condimentum lacinia. Et malesuada fames ac turpis egestas integer
+              eget. Elementum pulvinar etiam non quam lacus suspendisse faucibus
+              interdum posuere. Amet justo donec enim diam vulputate ut pharetra
+              sit. Risus ultricies tristique nulla aliquet enim tortor at
+              auctor. Velit sed ullamcorper morbi tincidunt ornare massa. Quis
+              hendrerit dolor magna eget est lorem ipsum. Etiam dignissim diam
+              quis enim. Gravida neque convallis a cras. Ut enim blandit
+              volutpat maecenas volutpat. Mauris sit amet massa vitae tortor
+              condimentum lacinia quis vel. Vitae aliquet nec ullamcorper sit
+              amet risus nullam eget felis. Nulla pharetra diam sit amet nisl.
+              Eget nulla facilisi etiam dignissim diam quis enim lobortis. Est
+              sit amet facilisis magna. Neque laoreet suspendisse interdum
+              consectetur libero id. Nec ullamcorper sit amet risus nullam eget
+              felis eget.Mollis aliquam ut porttitor leo a diam sollicitudin
+              tempor id. Euismod quis viverra nibh cras pulvinar mattis nunc.
+              Massa massa ultricies mi quis. Sit amet massa vitae tortor
+              condimentum lacinia. Et malesuada fames ac turpis egestas integer
+              eget. Elementum pulvinar etiam non quam lacus suspendisse faucibus
+              interdum posuere. Amet justo donec enim diam vulputate ut pharetra
+              sit. Risus ultricies tristique nulla aliquet enim tortor at
+              auctor. Velit sed ullamcorper morbi tincidunt ornare massa. Quis
+              hendrerit dolor magna eget est lorem ipsum. Etiam dignissim diam
+              quis enim. Gravida neque convallis a cras. Ut enim blandit
+              volutpat maecenas volutpat. Mauris sit amet massa vitae tortor
               condimentum lacinia quis vel.
             </p>
           </div>
         </div>
       </div>
-      <div className="textpage__layer4 image"></div>
-      <div className="textpage__layer2 image"></div>
-      <div className="textpage__layer6 image"></div>
-      <div className="textpage__layer3 image"></div>
-      <div className="textpage__layer5 image"></div>
+      <div
+        className={`textpage__layer4 image ${
+          viewport === -1024 ? 'textpage__layer4_animated' : ''
+        }`}
+      ></div>
+      <div
+        className={`textpage__layer2 image ${
+          viewport === -1024 ? 'textpage__layer2_animated' : ''
+        }`}
+      ></div>
+      <div
+        className={`textpage__layer6 image ${
+          viewport === -1024 ? 'textpage__layer6_animated' : ''
+        }`}
+      ></div>
+      <div
+        className={`textpage__layer3 image ${
+          viewport === -1024 ? 'textpage__layer3_animated' : ''
+        }`}
+      ></div>
+      <div
+        className={`textpage__layer5 image ${
+          viewport === -1024 ? 'textpage__layer5_animated' : ''
+        }`}
+      ></div>
     </section>
-  )
+  );
 };
 
 export default TextPage;
