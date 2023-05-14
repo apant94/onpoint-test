@@ -6,17 +6,16 @@ import BrendPage from '../BrendPage/BrendPage';
 
 const Slider = ({ viewport, setViewport, setIsOpen }) => {
   const [touchLocation, setTouchLocation] = useState(null); //стейт местонахождения нажатия
-  console.log(touchLocation);
 
   const goToNextPage = () => {
     setViewport((currentViewport) => {
-      return Math.max(currentViewport - 1024, -2048);
+      return currentViewport - 1024 < -2048 ? -2048 : currentViewport - 1024;
     });
   };
 
   const goToPrevPage = () => {
     setViewport((currentViewport) => {
-      return Math.min(currentViewport + 1024, 0);
+      return currentViewport + 1024 > 0 ? 0 : currentViewport + 1024;
     });
   };
 
@@ -25,12 +24,11 @@ const Slider = ({ viewport, setViewport, setIsOpen }) => {
   };
 
   const handleTouchMove = (event) => {
+    const delta = touchLocation - event.touches[0].clientX;
+
     if (touchLocation === null) {
       return;
     }
-    console.log(event.touches[0].clientX);
-
-    const delta = touchLocation - event.touches[0].clientX;
 
     if (delta > 10) {
       goToNextPage();
