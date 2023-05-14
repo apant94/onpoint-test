@@ -4,7 +4,7 @@ import MainPage from '../MainPage/MainPage';
 import TextPage from '../TextPage/TextPage';
 import BrendPage from '../BrendPage/BrendPage';
 
-const Slider = ({ viewport, setViewport, setIsOpen }) => {
+const Slider = ({ viewport, setViewport }) => {
   const [touchLocation, setTouchLocation] = useState(null); //стейт местонахождения нажатия
 
   const goToNextPage = () => {
@@ -53,7 +53,7 @@ const Slider = ({ viewport, setViewport, setIsOpen }) => {
       >
         <MainPage goToNextPage={goToNextPage} />
         <TextPage viewport={viewport} />
-        <BrendPage setIsOpen={setIsOpen} />
+        <BrendPage />
       </div>
     </div>
   );

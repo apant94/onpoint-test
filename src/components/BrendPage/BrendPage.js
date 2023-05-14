@@ -1,9 +1,17 @@
 import './BrendPage.css';
+import { useState } from 'react';
+import Popup from '../Popup/Popup';
 import bottleImg from '../../images/brendpage/brendpage-bottle.png';
 import eatImage from '../../images/brendpage/brendpage-eat.png';
 import calendarImage from '../../images/brendpage/brendpage-calendar.png';
 
-const BrendPage = ({ setIsOpen }) => {
+const BrendPage = () => {
+  const [isOpen, setIsOpen] = useState(false); //стейт попапа
+
+  const onClose = () => {
+    setIsOpen(false);
+  };
+
   return (
     <section className="brendpage">
       <img alt="Продукт" src={bottleImg} className="brendpage__bottle" />
@@ -46,6 +54,7 @@ const BrendPage = ({ setIsOpen }) => {
           onClick={() => setIsOpen(true)}
         ></button>
       </div>
+      <Popup isOpen={isOpen} onClose={onClose} />
     </section>
   );
 };

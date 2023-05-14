@@ -3,16 +3,11 @@ import { useState } from 'react';
 import Slider from '../Slider/Slider';
 import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
-import Popup from '../Popup/Popup';
 
 function App() {
-  const [isOpen, setIsOpen] = useState(false); //стейт попапа
   const [viewport, setViewport] = useState(0); //стейт отступа местонахождения в пикселях
 
-  const onClose = () => {
-    setIsOpen(false);
-  };
-
+  // возвращение на 1 страницу
   const backToHome = () => {
     setViewport(0);
   };
@@ -20,13 +15,8 @@ function App() {
   return (
     <div className="page" id="scroller">
       <Header backToHome={backToHome} />
-      <Slider
-        viewport={viewport}
-        setViewport={setViewport}
-        setIsOpen={setIsOpen}
-      />
+      <Slider viewport={viewport} setViewport={setViewport} />
       <Footer />
-      <Popup isOpen={isOpen} onClose={onClose} />
     </div>
   );
 }
