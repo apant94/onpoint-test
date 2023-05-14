@@ -82,7 +82,7 @@
 }
 
 .textpage__layer4_animated {
-  animation: textlayer4 2s linear forwards;
+  animation: textlayer4 1s ease-in-out forwards;
 }
 
 @keyframes textlayer4 {
@@ -108,7 +108,7 @@
 }
 
 .textpage__layer2_animated {
-  animation: textlayer2 2s linear forwards;
+  animation: textlayer2 1s ease-in-out forwards;
 }
 
 @keyframes textlayer2 {
@@ -134,7 +134,7 @@
 }
 
 .textpage__layer6_animated {
-  animation: textlayer6 2s linear forwards;
+  animation: textlayer6 1s ease-in-out forwards;
 }
 
 @keyframes textlayer6 {
@@ -160,7 +160,7 @@
 }
 
 .textpage__layer3_animated {
-  animation: textlayer3 2s linear forwards;
+  animation: textlayer3 1s ease-in-out forwards;
 }
 
 @keyframes textlayer3 {
@@ -186,7 +186,7 @@
 }
 
 .textpage__layer5_animated {
-  animation: textlayer5 2s linear forwards;
+  animation: textlayer5 1s ease-in-out forwards;
 }
 
 @keyframes textlayer5 {

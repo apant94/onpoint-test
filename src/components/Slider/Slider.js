@@ -7,7 +7,7 @@ import BrendPage from '../BrendPage/BrendPage';
 const Slider = ({ viewport, setViewport, setIsOpen }) => {
   const [touchPosition, setTouchPosition] = useState(null); //стейт местонахождения нажатия
 
-  const left = () => {
+  const goToPrevPage = () => {
     setViewport((currentViewport) => {
       return Math.min(currentViewport + 1024, 0);
     });
@@ -39,7 +39,7 @@ const Slider = ({ viewport, setViewport, setIsOpen }) => {
     }
 
     if (diff < -8) {
-      left();
+      goToPrevPage();
     }
 
     setTouchPosition(null);
