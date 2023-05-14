@@ -5,13 +5,8 @@ import TextPage from '../TextPage/TextPage';
 import BrendPage from '../BrendPage/BrendPage';
 
 const Slider = ({ viewport, setViewport, setIsOpen }) => {
-  const [touchPosition, setTouchPosition] = useState(null); //стейт местонахождения нажатия
-
-  const goToPrevPage = () => {
-    setViewport((currentViewport) => {
-      return Math.min(currentViewport + 1024, 0);
-    });
-  };
+  const [touchLocation, setTouchLocation] = useState(null); //стейт местонахождения нажатия
+  console.log(touchLocation);
 
   const goToNextPage = () => {
     setViewport((currentViewport) => {
@@ -19,37 +14,40 @@ const Slider = ({ viewport, setViewport, setIsOpen }) => {
     });
   };
 
-  const handleTouchStart = (e) => {
-    const touchDown = e.touches[0].clientX;
-    setTouchPosition(touchDown);
+  const goToPrevPage = () => {
+    setViewport((currentViewport) => {
+      return Math.min(currentViewport + 1024, 0);
+    });
   };
 
-  const handleTouchMove = (e) => {
-    const touchDown = touchPosition;
+  const handleTouchStart = (event) => {
+    setTouchLocation(event.touches[0].clientX);
+  };
 
-    if (touchDown === null) {
+  const handleTouchMove = (event) => {
+    if (touchLocation === null) {
       return;
     }
+    console.log(event.touches[0].clientX);
 
-    const currentTouch = e.touches[0].clientX;
-    const diff = touchDown - currentTouch;
+    const delta = touchLocation - event.touches[0].clientX;
 
-    if (diff > 8) {
+    if (delta > 10) {
       goToNextPage();
     }
 
-    if (diff < -8) {
+    if (delta < -10) {
       goToPrevPage();
     }
 
-    setTouchPosition(null);
+    setTouchLocation(null);
   };
 
   return (
     <div
       className="slider"
-      onTouchStart={handleTouchStart}
       onTouchMove={handleTouchMove}
+      onTouchStart={handleTouchStart}
     >
       <div
         className="slider__container"
