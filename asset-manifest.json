@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "./static/css/main.6a2a3a62.css",
-    "main.js": "./static/js/main.e0fd1c75.js",
+    "main.css": "./static/css/main.de7c41d1.css",
+    "main.js": "./static/js/main.435207ec.js",
     "static/media/brendpage-bg.png": "./static/media/brendpage-bg.699396f7acdfacfada9a.png",
     "static/media/Layer4.png": "./static/media/Layer4.f42fa97b71274ee27d1a.png",
     "static/media/DINPro.eot": "./static/media/DINPro.6e03c893a324ee2269d1.eot",
@@ -30,11 +30,11 @@
     "static/media/bakti_1.png": "./static/media/bakti_1.78b2348cc9f51add4d5e.png",
     "static/media/Layer4copy.png": "./static/media/Layer4copy.300c1fe6d43a717741a5.png",
     "index.html": "./index.html",
-    "main.6a2a3a62.css.map": "./static/css/main.6a2a3a62.css.map",
-    "main.e0fd1c75.js.map": "./static/js/main.e0fd1c75.js.map"
+    "main.de7c41d1.css.map": "./static/css/main.de7c41d1.css.map",
+    "main.435207ec.js.map": "./static/js/main.435207ec.js.map"
   },
   "entrypoints": [
-    "static/css/main.6a2a3a62.css",
-    "static/js/main.e0fd1c75.js"
+    "static/css/main.de7c41d1.css",
+    "static/js/main.435207ec.js"
   ]
 }
